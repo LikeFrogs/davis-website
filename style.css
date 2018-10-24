@@ -1,0 +1,148 @@
+/*
+font-family: 'Roboto', sans-serif;
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  background-color: #2D3142;
+}
+.notwide {
+  margin: 0 auto;
+  max-width: 800px;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+nav {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(white, 85%, rgba(255, 255, 255, 0.95));
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+nav #logo {
+  font-family: 'Lobster', cursive;
+  font-weight: 900;
+  font-size: 1.75em;
+  margin: -0.5rem;
+  margin-left: 0;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+nav #name {
+  font-family: 'Lobster', cursive;
+}
+nav a {
+  display: block;
+  padding: 0.5rem 1rem;
+  background-color: #144670;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  box-shadow: 0px 0px 8px 0px rgba(45, 49, 66, 0.3);
+  cursor: pointer;
+}
+header {
+  background-color: rgba(45, 49, 66, 0.9);
+  background: linear-gradient(90deg, #2D3142, 90%, rgba(45, 49, 66, 0.8));
+  box-shadow: inset 0px -8px 8px -8px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+header .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  background-image: url("images/man.jpg");
+  background-position: top;
+  background-size: contain;
+  z-index: -12;
+}
+header .notwide {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .notwide .image-wrap {
+  margin-bottom: -3rem;
+}
+header .notwide .image-wrap img {
+  max-width: 100%;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+}
+header .notwide .text {
+  background-color: white;
+  padding: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 8rem;
+  box-shadow: 1rem 1rem 0px -2px #144670, 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+}
+header .notwide .text h1 {
+  font-size: 2rem;
+  margin: 1rem;
+  font-family: 'Lobster', cursive;
+  font-family: 'Roboto', sans-serif;
+}
+header .notwide .text p {
+  margin: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+#game1 {
+  background-color: white;
+  padding-top: 6rem;
+}
+#game2 {
+  background-color: #144670;
+}
+#game2 .notwide .text {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+}
+section {
+  padding: 4rem 1rem;
+}
+section .notwide {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+section .notwide .text {
+  margin-right: 2rem;
+}
+section .notwide .text h2 {
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-family: 'Lobster', cursive;
+}
+section .notwide .text p {
+  font-family: 'Roboto', sans-serif;
+  margin: 1rem 0;
+}
+section .notwide .image-wrap {
+  max-width: 50%;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.5);
+}
+footer {
+  padding: 1rem 2rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer a {
+  color: #144670;
+}
