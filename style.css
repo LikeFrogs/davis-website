@@ -12,7 +12,7 @@ body {
 }
 .notwide {
   margin: 0 auto;
-  max-width: 900px;
+  max-width:1000px;
 }
 img {
   display: block;
@@ -70,13 +70,13 @@ header .bg {
   z-index: -12;
 }
 header .notwide {
-  padding-top: 1rem;
+  padding-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 header .notwide .image-wrap {
-  margin-bottom: -3rem;
+  margin-bottom: 7.5rem;
 }
 header .notwide .image-wrap img {
   max-width: 100%;
