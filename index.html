@@ -1,37 +1,55 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="./style.css">
-		<title>Davis Snider Portfolio</title>
-		<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:400" rel="stylesheet">
-	</head>
-	<body>
+<html lang="en">
 
-		<nav>
-			<span id="logo">DS</span>
-			<span id="name">Davis Snider</span>
-			<!--
-			<a>Contact</a>
-			-->
-		</nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Davis Snider Portfolio</title>
 
-		<header>
-			<div class="bg">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="Spooky_Website/css/style.css" rel="stylesheet">
 
-			</div>
-			<div class="notwide">
-                <div class="image-wrap" style="width: 400%; float: left;">
-                    <img src="./images/headshot.jpg" alt="">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa fa-home"></i></a></li>
+                <li><a href="#slideshow">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="splash">
+            <h1>
+                Davis Snider
+            </h1>
+            <div id="info">
+                <div id="davis" class="team_member">
+                    <img src="Spooky_Website/images/headshot.jpg" alt="headshot">
+                    <h3>
+                        Davis Snider
+                    </h3>
+                    <p>
+                        Game Designer and Programmer
+                    </p>
                 </div>
-                <div class="text">
-                    <h1>Davis Snider</h1>
+
+                <div id="about_me">
+                    <h2>About Me</h2>
                     <p>
 							My passion for game development has been a driving force throughout my life -  from an early age when I used
 						to create my own board games from the other games we had around the house, to my first efforts at video game
 						design in middle and high school, to my enrollment at Rochester Institute of Technology where I am
 						currently pursuing a degree in Game Design and Development. 
-						<br/><br/>
+                    </p>
+                    <p>
 							Whether in an engine like Unity or Unreal Engine where I work on video game projects with a team of other RIT 
 						students or on pen and paper as I design and balance my own tabletop rpg systems, you can almost always 
 						find me working on my latest design challenge. I’m versed in a wide variety of programming and scripting 
@@ -39,190 +57,208 @@
 						sense of what makes games fun and that sense is what drives me to create, striving to design the best 
 						possible experience. It has always been my dream to be a video game designer and I am eager to take the 
 						next steps in my professional development.
-						<br/><br/>
+                    </p>
+                    <p>
 							I’m actively seeking internships in the games industry and am always interested in new and exciting
 						opportunities. You can see some samples of my work on my <a href=" https://github.com/LikeFrogs ">github</a>.
 						Feel free to reach out to me at dls7470@rit.edu or (540)750-1740. 
                     </p>
                 </div>
-			</div>
-			
-		</header>
 
-		<section id="game_odd">
-			<div class ="notwide">
-				<div class="text">
-					<h2>Phantom Frame (Working Title)</h2>
-					<h3>
-						First-Person Survival Horror Game
-					</h3>
+            </div>
+        </div>
+            
+        <div class="main_section" id="slideshow">
+            <h2 class="section_header">
+                <span>                
+                    Projects
+                </span>
+            </h2>
 
-					<p>
-						Phantom Frame is a first-person survival horror game in which the player uses an enchanted polaroid camera to photograph otherwise invisible monsters. 
+            <div id="slides">
+                <div class="overlay_left" onclick="plusDivs(-1)">
+                    <i class="icon fa fa-angle-double-left"></i>
+                </div>
 
-						The game takes place in a noir-inspired setting in which our hero, a freelance detective, finds herself down on her luck, until she stumbles across a puzzling case, 
-						and a strange polaroid camera that can photograph the unseen. Dead-set on following this thread of crime, she pursues dangerous beings which can only be seen with this strange camera,
-						and slowly unravels the mystery behind the string of strange supernatural stuff that's going on in town.
-							
-						<ul>
-							My contributions:
-							<li>Created the AI behaviors for the monsters</li>
-							<li>Wrote general narrative and demo level scenario</li>
+                <div id="left" class="slideImg">
+                    <img src="Spooky_Website/images/Screenshot_1.png" alt="Phantom Frame Screenshot">
+                    <div class="project_content">
+                        <h3>Phantom Frame</h3>
+                        <h4>Camera-Based Horror Game</h4>
+                        Phantom Frame is a first-person survival horror game with a unique camera mechanic: there are various "supernatural" entities (monsters or objects)
+                        that can only be seen in the photos that you take with your instant camera. The game is being developed in Unreal Engine 4 and I serve as the
+                        wirter and lead programmer on the project. Design descisions are all a joint effort by me and my teammate. 
+                        Check out the game's <a href="LikeFrogs.github.io/PhantomFrame" target="_blank">website</a>!
+                        <h4>My contributions:</h4>
+                        <ul>
+							<li>Implemented AI behaviors for enemy monsters using C++ Tasks and Services and Unreal's Behavior Trees</li>
+                            <li>Programmed all functions of the player character from movement to interaction</li>
+                            <li>Designed and implemented a post process shader as an accessibility feature for deaf or hearing-impaired players</li>
+                            <li>Created an extensible system for environment objects that can be interacted with</li>
+                            <li>Set and enforced coding standards for the team</li>
+                            <li>Maintained git repo and oversaw branching strategy</li>
+                            <li>Wrote specs for the core game loop based around desired player experience</li>
+                            <li>Created the game's website from scratch</li>
 						</ul>
-					</p>
-				</div>
-				<div class="image-wrap" style="width: 350%">
-					<img src="./images/phantomframe.png" alt="">
-				</div>
-			</div>
-		</section>
+                    </div>
+                </div>
+                <div id="center" class="slideImg">
+                    <img src="Spooky_Website/images/Quantum.PNG" alt="Entangled Screenshot">
+                    <div class="project_content">
+                        <h3>Entangled</h3>
+                        <h4>3D Puzzle-Platformer</h4>
+                        Entangled was a short-term project I worked on with a team of five. We primarily developed the demo as a test of our Unity skills. The game's
+                        core mechanic is the player's ability to control two instances of themself that can both interact with different parts of the world, but not each other.
+                        I worked as our Lead Gameplay Programmer. The code is available on <a href="https://github.com/LikeFrogs/Quantum" target="_blank">github</a>.
+                        <h4>My contributions:</h4>
+                        <ul>
+							<li>Implemented a system for handling multiple instances of the player including death and respawning</li>
+                            <li>Developed a system for moveable blocks used in puzzles</li>
+                            <li>Designed and iterated on levels to create good, cohesive puzzles</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="right" class="slideImg">
+                    <img src="Spooky_Website/images/Gungi.PNG" alt="Gungi Screenshot">
+                    <div class="project_content">
+                        <h3>Gungi/War Council</h3>
+                        <h4>Abstract Strategy Game in Three Dimensions</h4>
+                        Gungi (or War Council) was a side project I started as a chance to work on something a little different. The game is similar to chess
+                        and shogi (Japanese chess), but with the ability to stack pieces on top of each other. It is based on a game appearing in the popular anime
+                        Hunter X Hunter using a ruleset developed on Reddit (with a few modifications made by me after playtesting). The game makes heavy use of Unity's 
+                        Canvas UI system for all of the interactable features. I didn't have time to finish the project during the month or so I worked on it, but I'm planning
+                        to return to it the next time I get a chance.
+                        <h4>My contributions:</h4>
+                        <ul>
+                            <li>Wrote an event-based system for handling players taking turns</li>
+                            <li>Built a "chess engine" from scratch to check for check, checkmate, and illegal moves</li>
+                            <li>Created algorithms to determin all legal moves at any given time</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- NOTE: add projects in an `id="null"` div -->
+                <div id="null" class="slideImg"> 
+                    <img src="Spooky_Website/images/Gameplay.PNG" alt="Project Rose Gardent Screenshot">
+                    <div class="project_content">
+                        <h3>Project Rose Garden</h3>
+                        <h4>Turn-Based Stealth/Strategy Game</h4>
+                        Project Rose Garden was a somewhat longer term project that I used primarily as a way to learn Unity. Rather than use plugins, libraries, or
+                        pre-written algorithms, I im plemented all the features myself. I tackled many challenges while working on this project and learned a lot!
+                        I have since moved on to other projects, but working on this game was invaluable in developing my skills early in my career.
+                        <h4>My contributions:</h4>
+                        <ul>
+                            <li>Implemented a custom version of the A* pathfinding algorithm for mapping characters' range of movement</li>
+                            <li>Programmed a manager class to handle entity updating and turn-taking</li>
+                            <li>Creted a dialogue system and editor tools to easily add and update dialogue</li>
+                        </ul>
+                    </div>
+                </div>
 
-		<section id="game_even">
-			<div class="notwide">
-				
-				<div class="image-wrap" style="width: 200%;">
-					<img src="./images/Gungi.PNG" alt="">
-				</div>
-				
-				<div class="text">
-					<h2>Gungi/War Council</h2>
-					<h3>
-						Abstract Strategy Game in Three Dimensions
-					</h3>
-					<p>
-						This is a short-term project I started over the summer as a chance to work on something a little
-						different, with the hopes of publishing on mobile sometime soon. The game is similar to chess and 
-						shogi (Japanese chess), but with the ability to stack pieces on top of each other. It is 
-						based on a game appearing in the popular anime Hunter X Hunter with rules developed on Reddit 
-						that I modified slightly  after playtesting. This is also a solo project with all
-						art and programming by me. The game is nearly done, so expect to see a build go live soon!
-						The coolest features I've implemented are:
-						<ul>
-									<li>An event-based system for moving pieces on your turn</li>
-									<li>Calculating all legal moves for the current player (and thus determining if they are in checkmate)</li>
-								</ul>
-					</p>
-				</div>				
+                <div class="overlay_right" onclick="plusDivs(+1)">
+                    <i class="icon fa fa-angle-double-right"></i>
+                </div>
+            </div>
 
-			</div>
-		</section>
+            <div id="dots">
+                <!-- filled in by javascript -->
+            </div>
 
-		<section id="game_odd">
-			<div class="notwide">
-				<div class="text">
-					<h2>Project Rose Garden</h2>
-					<h3>
-						Turn-based Stealth Strategy Game
-					</h3>
-					<p>
+            <div id="slide_description">
+            </div>
 
-						Project Rose Garden was a somewhat longer term project that I used primarily as a way to learn Unity 3D.
-						Rather than use plugins or pre-writen algorithms, I implemented all the features myself. I tackled many challenges while working
-						on this project and learned a lot! I have since moved on to other projects, but working on this game was invaluable in developing my
-						skills early in my career.
-						<ul>
-							The most important features I worked on are the following:
-      							<li>A custom variant of A* enemy pathfinding</li>
-      							<li>A dynamic UI dialogue system</li>
-      							<li>Combat, patrol and search behaviors for NPCs</li>
-      						</ul>
-					</p>
-				</div>
-				<div class="image-wrap" style="width: 350%;">
-					<img src="./images/Gameplay.PNG" alt="">
-				</div>
-			</div>
-		</section>	
-		
-		<section id="game_even">
-			<div class="notwide">
-				<div class="image-wrap" style="width: 350%;">
-					<a href="https://dayn9.itch.io/stealth-cooking">
-						<img src="./images/Stealth Cooking.PNG" alt="">
-					</a>
-				</div>
-				
-				<div class="text">
-					<h2>Stealth Cooking</h2>
-					<h3>
-						2D Stealth Game
-					</h3>
-					<p>
-						This was a group project created for Ludum Dare 41. Our theme was "Combine Two 
-						Incompatible Genres" and after some deliberation we settled on stealh and cooking. In this game 
-						the player takes control of a hungry teen who gets up in the middle of the night and must make 
-						pizza without waking the house.	Click the image to play the game on Itch!
-						<ul>
-							The cool things I did are:
-							<li>Implemented the inventory and crafting systems</li>
-							<li>Directed the development of the class hierarchy for the project</li>
-						</ul>
-					</p>
-				</div>				
+            <script>
+                let slideIndex = 0;
+                let slides = document.getElementsByClassName("slideImg");
+                let contentArea = document.querySelector("#slide_description");
 
-			</div>
-		</section>
+                let dotsDiv = document.getElementById("dots");
+                for(let i = 0; i < slides.length; i++){
+                    dotsDiv.innerHTML = dotsDiv.innerHTML + "<i class='dot fa fa-circle'></i>";                        
+                }                
+                var dots = document.getElementsByClassName("dot");
+                for(let i = 0; i < dots.length; i++){
+                    dots[i].setAttribute('data', i);
+                    dots[i].setAttribute('onclick', 'jumpToSlide(this.getAttribute("data"));');
+                    dots[i].onclick = function(){ jumpToSlide(this.getAttribute('data'));};
+                }
 
-		<section id="game_odd">
-			<div class="notwide">
-				<div class="text">
-					<h2>Custodi-MAN</h2>
-					<h3>
-						Turn-based Puzzle Game
-					</h3>
-					<p>
-						This was my first game project here at RIT. A group of friends and I developed this game for a 
-						charity event on campus called Hero Jam. Our theme was "Everyday Heroes" and so our game was 
-						about the heroic exploits of a janitor. Click the image to play the game on Itch!
-						<ul>
-							My contributions to the project were:
-							<li>All programming for the player controller</li>
-							<li>The resource management system</li>
-							<li>UI programming for the title screen and "Mission Accomplished" screens</li>
-						</ul>
-					</p>
-				</div>
-				<div class="image-wrap" style="width: 350%;">
-					<a href="https://dayn9.itch.io/custodiman">
-						<img src="./images/Custodi-MAN title.PNG" alt="">
-					</a>
-				</div>
-			</div>
-		</section>
-		
-		<section id="game_even">
-			<div class="notwide">
-					
-				<div class="image-wrap" style="width: 400%;">
-					<img src="./images/Quantum.PNG" alt="">
-				</div>
-				
-				<div class="text">
+                showDivs(slideIndex);
 
-					<h2>Entangled</h2>
-					<h3>
-						3D Puzzle-Platformer
-					</h3>
-					<p>
-						This very short-term team project was basically a tech demothat we put together to test our skills.
-						The game's core mechanic is the player's ability to control two 
-						instances of himself that can both interact with different parts of the world, but not each other. 
-						The code is available on github.
-						<ul>
-							The features I've worked on were:
-							<li>The handling of the two instance system: death and respawning of one or both characters</li>
-							<li>Moveable blocks for planned block puzzles</li>
-						</ul>
-					</p>
-				</div>
-			</div>
-		</section>
+                function plusDivs(n){
+                    slideIndex += n;
+                    if(slideIndex >= slides.length) { slideIndex = 0; }
+                    if(slideIndex < 0) { slideIndex = slides.length - 1; }
+                    showDivs(slideIndex);
+                }
 
-		<footer>
-			<span>&copy; 2018</span>
-			<span>Ethan Makes Websites</span>
-			<a href="#top">Top</a>
-		</footer>
+                function showDivs(n){
+                    for (let i = 0; i < slides.length; i++) {
+                        slides[i].setAttribute("id", "null");
+                        slides[i].setAttribute('onclick', '');
+                        slides[i].onclick = function(){;};
 
-	</body>
+                        if(dots[i].classList.contains("redDot")){
+                            dots[i].classList.remove("redDot");
+                        }
+                    }
+
+                    let center = n;
+                    if (n < 0) { center = x.length - 1; }
+                    if (n >= slides.length) { center = 0; }
+                    slides[center].setAttribute("id", "center");
+                    let content = slides[center].getElementsByClassName("project_content")[0].innerHTML;
+                    contentArea.innerHTML = content;
+
+                    let left = n - 1;
+                    if (left < 0) { left = slides.length - 1; }
+                    if (left >= slides.length) { left = 0; }
+                    slides[left].setAttribute("id", "left");                    
+                    slides[left].setAttribute('onclick', 'plusDivs(-1)');
+                    slides[left].onclick = function(){ plusDivs(-1); };
+
+                    let right = n + 1;
+                    if (right < 0) { right = slides.length - 1; }
+                    if (right >= slides.length) { right = 0; }
+                    slides[right].setAttribute("id", "right");                    
+                    slides[right].setAttribute('onclick', 'plusDivs(+1)');
+                    slides[right].onclick = function(){ plusDivs(+1); };
+
+                    dots[center].classList.add("redDot");
+                }
+
+                function jumpToSlide(n){
+                    slideIndex = parseInt(n);
+                    if(slideIndex >= slides.length) { slideIndex = 0; }
+                    if(slideIndex < 0) { slideIndex = slides.length - 1; }
+                    showDivs(slideIndex);
+                }
+            </script>
+        </div>
+
+        <div class="main_section" id="resume">
+            <h2 class="section_header">
+                <span>                
+                    Resume
+                </span>
+            </h2>
+            
+            <iframe src="Spooky_Website/images/resume.pdf"></iframe>
+        </div>
+
+        <div class="main_section" id="contact">
+            <h2 class="section_header">
+                <span>                
+                    Contact Me
+                </span>
+            </h2>
+
+            <p>
+                Feel free to reach out to me at via email at dls7470@rit.edu or over the phone at (540)750-1740.
+            </p>
+
+        </div>
+    </main>
+        
+</body>
+
 </html>
